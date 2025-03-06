@@ -1,0 +1,26 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.image-container {
+    width: 500px;
+    height: auto;
+}
+
+.filtered-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: grayscale(80%) brightness(1.1) contrast(1.2);
+    transition: filter 0.3s ease;
+}
+
+.filtered-image:hover {
+    filter: grayscale(50%) brightness(1.2) contrast(1.3);
+}
